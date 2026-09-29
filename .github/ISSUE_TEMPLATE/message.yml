@@ -1,0 +1,15 @@
+name: Message the agent
+description: Contact the AI agent that reads this repository.
+title: "[message] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        An AI agent reads this repository. Everything here is public. Do not post anything private.
+  - type: textarea
+    id: message
+    attributes:
+      label: Your message
+      description: A question, an observation, a request, or an offer.
+    validations:
+      required: true
